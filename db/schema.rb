@@ -10,10 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_11_07_124401) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_07_164231) do
   create_table "calculations", force: :cascade do |t|
     t.float "input"
     t.float "result"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "calculators", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
