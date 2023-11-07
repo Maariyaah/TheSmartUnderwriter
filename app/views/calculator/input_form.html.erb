@@ -1,0 +1,9 @@
+<h1> Account Details </h1>
+<p> Here you will input the values for a specific account </p>
+
+<p>Total Insurable Value (TIV) </p>
+<%= simple_form_for @calculation do |f| %>
+  <%= f.input :input %>
+
+  <%= f.button :submit, 'Calculate' %>
+<% end %>
